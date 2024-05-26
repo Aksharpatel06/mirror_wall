@@ -27,7 +27,7 @@ class BookMarkScreen extends StatelessWidget {
               subtitle: Text(providertrue.bookmarkList[index].url,overflow: TextOverflow.ellipsis,),
               trailing: CupertinoButton(
                 onPressed: () {
-                  providerfalse.removeHistory(index);
+                  providerfalse.removeBookMark(index);
                 },
                 child: Icon(Icons.cancel),
               ),
