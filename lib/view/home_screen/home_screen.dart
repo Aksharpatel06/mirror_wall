@@ -147,6 +147,7 @@ class HomeScreen extends StatelessWidget {
             },
             onLoadStop: (controller, url) {
               providerfalse.setCurrentUrl(url);
+              providerfalse.checkIfShouldGoBack();
               pullToRefreshController.endRefreshing();
             },
             pullToRefreshController: pullToRefreshController,
