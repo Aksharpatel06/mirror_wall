@@ -60,17 +60,17 @@ class HomeScreen extends StatelessWidget {
                     child: CupertinoButton(
                         onPressed: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => BookMarkScreen(),
+                            builder: (context) => const BookMarkScreen(),
                           ));
-                        }, child: Text('BookMark'))),
+                        }, child: const Text('BookMark'))),
                 PopupMenuItem(
                     child: CupertinoButton(
                         onPressed: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => HistoeryScreen(),
+                            builder: (context) => const HistoeryScreen(),
                           ));
                         },
-                        child: Text('History'))),
+                        child: const Text('History'))),
                 PopupMenuItem(
                     child: CupertinoButton(
                         onPressed: () {
@@ -86,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                                       providerfalse.Changewebview(value);
                                       Navigator.of(context).pop();
                                     },
-                                    title: Text('Google'),
+                                    title: const Text('Google'),
                                   ),
                                   RadioListTile(
                                     value: 'https://in.search.yahoo.com/',
@@ -95,7 +95,7 @@ class HomeScreen extends StatelessWidget {
                                       providerfalse.Changewebview(value);
                                       Navigator.of(context).pop();
                                     },
-                                    title: Text('Yahoo'),
+                                    title: const Text('Yahoo'),
                                   ),
                                   RadioListTile(
                                     value: 'https://duckduckgo.com/',
@@ -104,7 +104,7 @@ class HomeScreen extends StatelessWidget {
                                       providerfalse.Changewebview(value);
                                       Navigator.of(context).pop();
                                     },
-                                    title: Text('Duck Duck Go'),
+                                    title: const Text('Duck Duck Go'),
                                   ),
                                   RadioListTile(
                                     value: 'https://www.bing.com/',
@@ -113,7 +113,7 @@ class HomeScreen extends StatelessWidget {
                                       providerfalse.Changewebview(value);
                                       Navigator.of(context).pop();
                                     },
-                                    title: Text('Bing'),
+                                    title: const Text('Bing'),
                                   ),
                                 ]),
                                 actions: [
@@ -121,13 +121,13 @@ class HomeScreen extends StatelessWidget {
                                       onPressed: () {
                                         Navigator.of(context).pop();
                                       },
-                                      child: Text('Cancel')),
+                                      child: const Text('Cancel')),
                                 ],
                               );
                             },
                           );
                         },
-                        child: Text('Search  Engine'))),
+                        child: const Text('Search  Engine'))),
               ];
             },
           ),
@@ -159,7 +159,7 @@ class HomeScreen extends StatelessWidget {
               : Container(),
         ],
       ),
-      bottomNavigationBar: bottomNaviagation(),
+      bottomNavigationBar: const bottomNaviagation(),
     );
   }
 }
