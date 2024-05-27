@@ -72,23 +72,11 @@ class HomeProvider extends ChangeNotifier{
     notifyListeners();
   }
 
-  // Future<void> browerGoBack()
-  // async {
-  //   isGoBack= await inAppWebViewController.canGoBack();
-  //   notifyListeners();
-  // }
-
   Future<void> goForward()
   async {
     await inAppWebViewController.goForward();
     notifyListeners();
   }
-
-  // Future<void> browerGoForwad()
-  // async {
-  //   isGoBack= await inAppWebViewController.canGoForward();
-  //   notifyListeners();
-  // }
 
   Future<void> checkIfShouldGoBack() async {
     if (uri.toString() == 'https://www.google.com/' ||
