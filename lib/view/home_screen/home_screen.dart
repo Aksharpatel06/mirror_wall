@@ -1,9 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:mirror_wall/provider/home_provider.dart';
-import 'package:mirror_wall/view/bookmarkscreen/bookmark_screen.dart';
-import 'package:mirror_wall/view/historyscreen/history_screen.dart';
 import 'package:mirror_wall/view/home_screen/componects/bottom_navigation.dart';
 import 'package:provider/provider.dart';
 
