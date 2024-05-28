@@ -5,8 +5,8 @@ import 'package:provider/provider.dart';
 import '../../../../../utils/global_variable.dart';
 import '../../../provider/home_provider.dart';
 
-class bottomNaviagation extends StatelessWidget {
-  const bottomNaviagation({super.key});
+class BottomNaviagation extends StatelessWidget {
+  const BottomNaviagation({super.key});
 
   @override
   Widget build(BuildContext context) {
